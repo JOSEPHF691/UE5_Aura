@@ -46,3 +46,15 @@ git push -u origin fix/inventory-stacking
 ## 定位回归
 
 先保存当前未提交的工作，再在独立工作目录比较最近正常版本和异常版本。通过 `git log`、`git show` 查看修改；有稳定复现步骤时，可使用 `git bisect` 逐步找到首次引入故障的提交。避免直接用破坏性命令丢弃现有工作。
+
+## 本机网络配置
+
+浏览器能够访问 GitHub，而 Git LFS 直连超时时，检查 Git 是否使用了本机现有代理。代理按机器配置在 `.git/config`，不会随仓库分发；首次上传所用开发机已在本仓库配置其现有系统代理。
+
+```powershell
+git config --local --get http.proxy
+# 不再需要该代理时，移除本仓库设置
+git config --local --unset http.proxy
+```
+
+不要把访问令牌、带账号密码的远端地址或本机代理凭据写入项目文档和提交内容。
