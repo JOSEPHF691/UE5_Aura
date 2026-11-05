@@ -1,0 +1,54 @@
+# Unreal generated files and local runtime data
+/Binaries/
+/Intermediate/
+/DerivedDataCache/
+/Saved/
+/Saved_*/
+
+# Local backups and logs
+/Backup/
+/logs/
+*.log
+*.tmp
+*.bak
+
+# Visual Studio / Rider local files
+/.vs/
+/.idea/
+*.sln
+*.suo
+*.user
+*.VC.db
+*.VC.opendb
+/UpgradeLog*.htm
+
+# Reinstallable local Rider integration; other plugins remain tracked
+/Plugins/Developer/RiderLink/
+
+# Generated build access-order logs; preserve authored Build files
+/Build/**/FileOpenOrder/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Local environment configuration
+.env
+.env.*
+!.env.example
+
+# Personal documents
+/游戏客户端简历.docx
+
+# Local worktrees and agent scratch data
+/.worktrees/
+/worktrees/
+/.superpowers/
+/.codex/
+/.aws/
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini

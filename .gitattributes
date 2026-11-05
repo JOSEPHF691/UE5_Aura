@@ -1,0 +1,9 @@
+# Normalize text in the repository without treating UE packages as text.
+* text=auto
+
+# Unreal Engine binary packages and levels
+*.uasset filter=lfs diff=lfs merge=lfs -text
+*.umap filter=lfs diff=lfs merge=lfs -text
+
+# Authored equipment icon sources
+SourceArt/**/*.png filter=lfs diff=lfs merge=lfs -text
